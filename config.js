@@ -5,7 +5,7 @@
 
 // URL del Web App de Apps Script (.../exec).
 const API =
-  "https://script.google.com/macros/s/AKfycbw-gqFeNIM3p6iiTsxF7cY1kdAsR-cvP82K8biZNJBjKItbNSZsKnPwuBTROlkvOl23Tg/exec";
+  "https://script.google.com/macros/s/AKfycbxUIqWmRu9LWTnI14NOqwLIzCAZXdFdQYhOSdXbQhVOVuVTMSZscuKZ7LLpRq0PWAhUjw/exec";
 
 // OAuth Client ID (mismo que en apps_script/Config.gs).
 const GOOGLE_CLIENT_ID =
