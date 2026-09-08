@@ -1409,7 +1409,7 @@ async function renderAdminAllowlist() {
   el.innerHTML='<div class="loading"><span class="spinner"></span>Cargando…</div>';
   const r=await api('getAllowlist',{});
   const list=r.allowlist||[];
-  el.innerHTML=`<p style="font-size:13px;color:var(--text-2);margin-bottom:1rem;">Los emails <code>@gcloud.ua.es</code> y <code>@ua.es</code> entran sin estar en esta lista. Esta lista es para excepciones de otros dominios (p. ej. @gmail.com).</p>
+  el.innerHTML=`<p style="font-size:13px;color:var(--text-2);margin-bottom:1rem;">Los emails <code>@gcloud.ua.es</code>, <code>@ua.es</code> y <code>@gmail.com</code> entran sin estar en esta lista. Esta lista es para excepciones de otros dominios.</p>
   <table style="margin-bottom:1rem;"><thead><tr><th>Email</th><th></th></tr></thead><tbody>${
     list.map(e=>`<tr><td>${esc(e)}</td><td><button class="danger" onclick="removeAllow('${esc(e)}')" ${e===S.user.email?'disabled':''}>Quitar</button></td></tr>`).join('')
   }</tbody></table>

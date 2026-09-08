@@ -33,10 +33,9 @@ const GOOGLE_AUTH_DOMAINS = ['gcloud.ua.es', 'gmail.com'];
 const PASSWORD_DOMAINS = ['ua.es'];
 
 // Dominios auto-permitidos (no requieren estar en `allowlist`).
-// Solo dominios UA: los puestos son para asociados/sustitutos del departamento.
-// Emails @gmail.com (u otros) requieren allowlist explícita (los admins
-// siempre están autorizados).
-const AUTO_ALLOWED_DOMAINS = ['gcloud.ua.es', 'ua.es'];
+// Mismo esquema que FAE_Room_Booking: cualquier email de estos dominios
+// puede registrarse / autenticarse.
+const AUTO_ALLOWED_DOMAINS = ['gcloud.ua.es', 'ua.es', 'gmail.com'];
 
 // Duración de la sesión (en ms).
 const SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 días

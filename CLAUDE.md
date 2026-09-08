@@ -36,9 +36,9 @@ misma arquitectura, con modelo de **aforo** en lugar de exclusividad.
 
 ## Autorización de usuarios
 
-`AUTO_ALLOWED_DOMAINS = ['gcloud.ua.es', 'ua.es']` — **sin** `gmail.com` (a diferencia
-de FAE_Room_Booking): los puestos son para personal del departamento. Emails de otros
-dominios → allowlist explícita desde el panel admin. Los `ADMIN_EMAILS` siempre entran.
+`AUTO_ALLOWED_DOMAINS = ['gcloud.ua.es', 'ua.es', 'gmail.com']` — mismo esquema que
+FAE_Room_Booking (decisión de Pedro, 2026-09-08). Emails de otros dominios → allowlist
+explícita desde el panel admin. Los `ADMIN_EMAILS` siempre entran.
 Admin: `pedro.albarran@gmail.com`.
 
 ## Sheet y despliegue
